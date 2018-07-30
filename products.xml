@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="products.css"?>
+<products>
+ <product id="p1" class="special">
+  <name>Toys</name>
+  <price>800</price>
+  <stock>4</stock>
+  <country>India</country>
+ </product>
+ <product id="p2">
+  <name>Clothes</name>
+  <price>1000</price>
+  <stock>5</stock>
+  <country>Germany</country>
+ </product>
+ <product id="p3">
+  <name>Bath and Skin</name>
+  <price>1200</price>
+  <stock>19</stock>
+  <country>China</country>
+ </product>
+ <product id="p4">
+  <name>Birthday Gifts</name>
+  <price>1500</price>
+  <stock>5</stock>
+  <country>Australia</country>
+ </product>
+</products>

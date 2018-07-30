@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+function myFunction1() {
+    var x = document.getElementById("myCheck").required;
+}
+function myFunction2() {
+    var x = document.getElementById("myRadio").required;
+}
+</script>
+</head>
+<body background=bunnies.jpg>
+
+
+<form action="action_page.php">
+ <fieldset>
+    <legend>REGISTER HERE:</legend>
+  First name:
+  <input type="text" name="firstname">
+  <br><br>
+  Last name:
+  <input type="text" name="lastname">
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="male" required> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other <br><br>
+  Date of birth(DOB):
+ <input type="date" name="DOB"><br><br>
+  Category(in months):
+  <input list="age" name="age">
+  <datalist id="age">
+    <option value="0-6">
+    <option value="6-12">
+    <option value="12-18">
+    <option value="18-24">
+  </datalist><br><br>
+  Select your favorite color:
+  <input type="color" name="favcolor"><br><br>
+  Looking For:
+<input type="checkbox" name="Retailer" required>Clothes
+<input type="checkbox" name="Broker" >Accessories
+<input type="checkbox" name="Retailer" >Bath and Skin
+<input type="checkbox" name="Broker" >Birthday gifts
+<br><br>
+Range:<BR>
+<input type="range"  name="range" min=100 max=15000>
+<br><br>
+  E-mail:
+  <input type="email" name="email"><br><br>
+  Phone Number:
+  <input type="tel" name="usrtel"><br><br>
+ 
+  Please Enter Your Queries Here:<br><br>
+<textarea name="message" rows="10" cols="30"></textarea>
+  
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+  </fieldset>
+</form>
+
+<p style="text-align:center;font-size:150;font-family:comic sans ms;"><a href="home.html">GO TO HOME PAGE</a></p>
+
+</body>
+</html>
